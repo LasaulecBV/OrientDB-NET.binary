@@ -72,7 +72,14 @@ namespace Orient.Client
             if (TryGetValue(fieldPath, out fieldValue))
             {
                 if (fieldValue == null)
+                {
+                    if (typeof(T) == typeof(ODocument))
+                    {
+                        return (T)Activator.CreateInstance(type);
+                    }
+
                     return default(T);
+                }
 
                 if (fieldValue.GetType() == typeof(T))
                     return (T)fieldValue;
