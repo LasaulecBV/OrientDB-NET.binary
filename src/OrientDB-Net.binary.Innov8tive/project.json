@@ -2,7 +2,7 @@
   "id": "OrientDB-Net.binary.Innov8tive",
   "version": "0.1.6-*",
   "description": "C#/.NET binary driver for OrientDB",
-  "authors": [ "Gray Delacluyse" ],
+  "authors": [ "Gray Delacluyse", "W. Zwiers" ],
   "packOptions": {
     "tags": [ "orientdb", "database", "orient", ".net", "c#", "document", "graph" ],
     "projectUrl": "https://github.com/Innov8tiveSoftware/OrientDB-NET.binary",
